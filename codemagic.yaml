@@ -8,3 +8,6 @@ scripts:
   - name: Build ipa for benchmark
     script: |
       sh benchmark.sh
+
+artifacts:
+  - build/ios/ipa/*.ipa
