@@ -1,13 +1,12 @@
 workflows:
   ios-workflow-id:
+  
     name: iOS Benchmark
     max_build_duration: 120
     instance_type: mac_mini_m1
 
-scripts:
-  - name: Build ipa for benchmark
-    script: |
-      sh benchmark.sh
+    scripts:
+      - name: Build ipa for benchmark
+        script: sh benchmark.sh
 
-artifacts:
-  - build/ios/ipa/*.ipa
+
